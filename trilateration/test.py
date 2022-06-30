@@ -2,6 +2,10 @@ import string
 import re
 import math 
 import csv
+import os
+import time
+
+os.system('sudo blescan | grep "ac:23:3f" > scan.txt')
 
 Dict = {'Beacon3': 'ac:23:3f:65:f7:96', 'Beacon4':'ac:23:3f:65:f7:9a', 'Beacon5': 'ac:23:3f:65:f7:a9', 'Beacon6': 'ac:23:3f:65:f7:9c', 
     'Beacon7': 'ac:23:3f:65:f7:9d', 'Beaco10':'ac:23:3f:65:f7:a7', 'Beaco11': 'ac:23:3f:65:f7:a0', 'Beaco12':'ac:23:3f:65:f7:99', 'Beaco13':'ac:23:3f:65:f7:a5', 
@@ -23,20 +27,6 @@ with open('scan.txt') as f:
 
 f.close()
 
-
-#for key,value in findings.items():
-#        print(key, value)
-
-# Execute calculation of distance
-#for val in findings.values():
-#        print('%.2f' % 10** ((-65 -(val))/(10 * 2.4)))
-
-# Look for item in Dict list
-#for name, age in Dict.items():
-#       if age == search_age:
-#               print(name)
-#               print(age)
-
 keys = []
 vals = []
 dist = []
@@ -45,14 +35,9 @@ for key,val in findings.items():
 	keys.append(key)
 	vals.append(val)
 	dist.append(distance)
-	#print(val)
-	#print('%.2f' % 10** ((-65 -(val))/(10 * 2.4)))
 
-#for i in range(len(results)):
-#	print(results[i])
-
-
-file = open('new.csv', 'w', newline='')
+time = time.strftime("%Y%m%d-%H%M%S")
+file = open('test-' + time + '.csv', 'w', newline='')
 with file:
 	header = ['name', 'mac', 'rssi', 'distance']
 	writer = csv.DictWriter(file, fieldnames = header)
