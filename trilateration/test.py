@@ -30,6 +30,7 @@ f.close()
 keys = []
 vals = []
 dist = []
+
 for key,val in findings.items():
 	distance = 10** ((-65 -(val))/(10 * 2.4))
 	keys.append(key)
@@ -38,6 +39,7 @@ for key,val in findings.items():
 
 time = time.strftime("%Y%m%d-%H%M%S")
 file = open('test-' + time + '.csv', 'w', newline='')
+
 with file:
 	header = ['name', 'mac', 'rssi', 'distance']
 	writer = csv.DictWriter(file, fieldnames = header)
