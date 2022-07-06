@@ -4,6 +4,9 @@ import math
 import csv
 import os
 import time
+#from time import time, sleep, strftime
+#import schedule
+
 
 os.system('sudo blescan | grep "ac:23:3f" > scan.txt')
 
@@ -13,17 +16,18 @@ Dict = {'Beacon3': 'ac:23:3f:65:f7:96', 'Beacon4':'ac:23:3f:65:f7:9a', 'Beacon5'
 
 findings = {}
 
+
 # Read file after looking for devices
 mac_addr = re.compile(r':*(?:[0-9a-fA-F]:?){12}')
 rssi_val = re.compile(r'(^|-)([0-9]+)')
 
 with open('scan.txt') as f:
-        lines = f.readlines()
-        for line in lines:
-                m = re.search(mac_addr, line)
-                r = re.search(rssi_val, line)
-                if m and r:
-                        findings[m.group()] = int(r.group())
+	lines = f.readlines()
+	for line in lines:
+		m = re.search(mac_addr, line)
+		r = re.search(rssi_val, line)
+		if m and r:
+			findings[m.group()] = int(r.group())
 
 f.close()
 
@@ -38,6 +42,7 @@ for key,val in findings.items():
 	dist.append(distance)
 
 time = time.strftime("%Y%m%d-%H%M%S")
+#time = strftime("%Y%m%d-%H%M%S")
 file = open('test-' + time + '.csv', 'w', newline='')
 
 with file:
@@ -51,3 +56,4 @@ with file:
 			if mac == keys[i]:
 				writer.writerow({'name':name, 'mac':mac, 'rssi':vals[i], 'distance':dist[i]})
 
+#schedule.every(1).minutes.do(func)
