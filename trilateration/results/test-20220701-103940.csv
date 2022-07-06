@@ -1,4 +1,4 @@
-name,mac,rssi,distance
+name, mac, rssi, distance (m)
 Beacon3,ac:23:3f:65:f7:96,-73,2.154434690031884
 Beaco12,ac:23:3f:65:f7:99,-58,0.5108969774506927
 Beacon5,ac:23:3f:65:f7:a9,-68,1.333521432163324
