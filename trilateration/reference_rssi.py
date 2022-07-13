@@ -5,7 +5,8 @@ import statistics
 #import pandas as pd
 #import numpy
 
-directory = 'results'
+#directory = 'results'
+directory = 'reference_values'
 rssi = []
 #files = []
 
