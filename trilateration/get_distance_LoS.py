@@ -34,9 +34,11 @@ f.close()
 keys = []
 vals = []
 dist = []
+reference_value = -48.37
 
+# Calculate distance Line of Sight (LoS)
 for key,val in findings.items():
-	distance = 10** ((-65 -(val))/(10 * 2.4))
+	distance = 10** ((reference_value -(val))/(10 * 2.4))
 	keys.append(key)
 	vals.append(val)
 	dist.append(distance)
