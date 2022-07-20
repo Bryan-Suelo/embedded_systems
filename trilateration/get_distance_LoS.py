@@ -48,7 +48,7 @@ time = time.strftime("%Y%m%d-%H%M%S")
 file = open('test-' + time + '.csv', 'w', newline='')
 
 with file:
-	header = ['name', 'mac', 'rssi', 'distance']
+	header = ['name', 'mac', 'rssi', 'distance (m)']
 	writer = csv.DictWriter(file, fieldnames = header)
 	writer.writeheader()
 	for i in range(len(keys)):
@@ -56,6 +56,6 @@ with file:
 		for name,mac in Dict.items():
 			#print(results[i])
 			if mac == keys[i]:
-				writer.writerow({'name':name, 'mac':mac, 'rssi':vals[i], 'distance':dist[i]})
+				writer.writerow({'name':name, 'mac':mac, 'rssi':vals[i], 'distance (m)':dist[i]})
 
 #schedule.every(1).minutes.do(func)
