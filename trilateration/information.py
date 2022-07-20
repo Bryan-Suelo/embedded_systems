@@ -3,8 +3,8 @@ import os
 import statistics
 
 #import pandas as pd
-import numpy as np
-
+#import numpy as np
+#import matplotlib.pyplot as plt
 
 
 Dict = {'Beacon3':[], 'Beacon4':[], 'Beacon5':[], 'Beacon6':[], 'Beacon7':[],
@@ -35,3 +35,7 @@ for key, value in Dict.items():
 	print('Standard deviation: ', round(statistics.pstdev(value),2))
 	print('\n')
 
+
+#for key, value in Dict.items():
+#	plt.hist(value)
+#	plt.show()
