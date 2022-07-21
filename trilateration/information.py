@@ -8,11 +8,17 @@ import statistics
 
 
 Dict = {'Beacon3':[], 'Beacon4':[], 'Beacon5':[], 'Beacon6':[], 'Beacon7':[],
-	'Beaco11':[], 'Beaco12':[], 'Beaco13':[], 'Beaco18':[],
-	'Beaco19':[], 'Beaco20':[], 'Beaco17':[], 'MBeacon':[]}
+	'Beaco10':[], 'Beaco11':[], 'Beaco12':[], 'Beaco13':[],  'Beaco17':[],
+	'Beaco18':[], 'Beaco19':[], 'Beaco20':[], 'Test1':[]}
 
-directory = 'results'
-rssi = np.array([])
+#directory = 'results'
+#directory = 'five_minutes_interval'
+#directory = 'one_minute_interval'
+#directory = 'thirty_seconds_interval'
+#directory = 'fifteen_seconds_interval'
+directory = 'ten_seconds_reference'
+
+#rssi = np.array([])
 files = []
 
 for filename in os.listdir(directory):
@@ -25,6 +31,8 @@ for filename in os.listdir(directory):
 				for key in Dict.keys():
 					if row[0] == key:
 						Dict[key].append(int(row[2]))
+
+print('Data from each device\n')
 
 for key, value in Dict.items():
 	print(key)

@@ -11,8 +11,8 @@ import time
 os.system('sudo blescan | grep "ac:23:3f" > scan.txt')
 
 Dict = {'Beacon3': 'ac:23:3f:65:f7:96', 'Beacon4':'ac:23:3f:65:f7:9a', 'Beacon5': 'ac:23:3f:65:f7:a9', 'Beacon6': 'ac:23:3f:65:f7:9c', 
-    'Beacon7': 'ac:23:3f:65:f7:9d', 'Beaco10':'ac:23:3f:65:f7:a7', 'Beaco11': 'ac:23:3f:65:f7:a0', 'Beaco12':'ac:23:3f:65:f7:99', 'Beaco13':'ac:23:3f:65:f7:a5', 
-    'Beaco18':'ac:23:3f:65:f7:97', 'Beaco19':'ac:23:3f:65:f7:98', 'Beaco20':'ac:23:3f:65:f7:9b', 'Beaco17':'ac:23:3f:65:f7:9f', 'MBeacon':'ac:23:3f:65:f7:2e'}
+	'Beacon7': 'ac:23:3f:65:f7:9d', 'Beaco10':'ac:23:3f:65:f7:28', 'Beaco11': 'ac:23:3f:65:f7:a0', 'Beaco12': 'ac:23:3f:65:f7:99', 'Beaco13':'ac:23:3f:65:f7:a5', 
+	'Beaco17': 'ac:23:3f:65:f7:9f', 'Beaco18':'ac:23:3f:65:f7:97', 'Beaco19': 'ac:23:3f:65:f7:98', 'Beaco20': 'ac:23:3f:65:f7:31', 'Test1':'ac:23:3f:65:f7:2e'}
 
 findings = {}
 
