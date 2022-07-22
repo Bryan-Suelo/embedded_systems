@@ -8,8 +8,8 @@ import statistics
 
 
 Dict = {'Beacon3':[], 'Beacon4':[], 'Beacon5':[], 'Beacon6':[], 'Beacon7':[],
-	'Beaco10':[], 'Beaco11':[], 'Beaco12':[], 'Beaco13':[],  'Beaco17':[],
-	'Beaco18':[], 'Beaco19':[], 'Beaco20':[], 'Test1':[]}
+	'Test5':[], 'Beaco11':[], 'Beaco12':[], 'Beaco13':[],  'Beaco17':[],
+	'Beaco18':[], 'Beaco19':[], 'Test5':[], 'Test1':[]}
 
 #directory = 'results'
 #directory = 'five_minutes_interval'
