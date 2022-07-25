@@ -8,15 +8,16 @@ import statistics
 
 
 Dict = {'Beacon3':[], 'Beacon4':[], 'Beacon5':[], 'Beacon6':[], 'Beacon7':[],
-	'Test5':[], 'Beaco11':[], 'Beaco12':[], 'Beaco13':[],  'Beaco17':[],
-	'Beaco18':[], 'Beaco19':[], 'Test5':[], 'Test1':[]}
+	'Beaco11':[], 'Beaco12':[], 'Beaco13':[], 'Beaco17':[], 'Beaco18':[],'Beaco19':[],
+	'Test1':[], 'Test5':[], 'Test6':[], 'Test7':[]}
+#, 'Test8':[]}
 
 #directory = 'results'
 #directory = 'five_minutes_interval'
 #directory = 'one_minute_interval'
 #directory = 'thirty_seconds_interval'
-#directory = 'fifteen_seconds_interval'
-directory = 'ten_seconds_reference'
+directory = 'fifteen_seconds_interval-07-22-2022'
+#directory = 'ten_seconds_reference'
 
 #rssi = np.array([])
 files = []
