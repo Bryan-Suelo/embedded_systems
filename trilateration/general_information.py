@@ -8,8 +8,8 @@ import numpy as np
 #directory = 'five_minutes_interval'
 #directory = 'one_minute_interval'
 #directory = 'thirty_seconds_interval'
-#directory = 'fifteen_seconds_interval'
-directory = 'ten_seconds_reference'
+directory = 'fifteen_seconds_interval-07-22-2022'
+#directory = 'ten_seconds_reference'
 
 rssi = []
 files = []
